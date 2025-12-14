@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+
+    font-family: Roboto;
+}
+
+body {
+
+    background-color: #1A4715;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+header {
+
+    color: tomato;
+    text-shadow: 5px 5px 10px rgba(0,0,0,.7);
+    font-family: "Cinzel Decorative", cursive;
+    font-size: 4vh;
+}
+
+section{
+
+    background-color: rgba(128, 204, 128, 0.7);
+    color: #f2f2dc;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid gold;
+    border-radius: 15px;
+    padding: 5px;
+    width: 90%;
+    gap: 10px;
+    line-height: 1.5;
+}
+
+section img{
+
+    max-width: 90%;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+section p strong{
+
+    color: rgb(250, 239, 145);
+    font-size: 2.2vh;
+}
+
+section ul li strong{
+
+    color:rgb(250, 239, 145);
+    font-weight: bolder;
+}
+
+section button{
+
+    background-color: gold;
+    color: #333;
+    font-size: 1rem;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    transition: transform 0.1s ease, box-shadow 0.2s ease;
+    
+}
+
+section button:hover {
+    transform: translateY(-2px);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+section button:active {
+    transform: translateY(1px);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+footer{
+
+    color: rgb(250, 239, 145);
+}

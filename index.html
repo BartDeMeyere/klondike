@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♠♥ Klondike Solitaire ♦♣</title>
+    <link rel="stylesheet" href="layout.css">
+</head>
+
+<body>
+    <header>♠♥ Klondike Solitaire ♦♣</header>
+
+    <br>
+
+    <section>
+        <p><strong>Welkom bij Klondike Solitaire!</strong></p>
+        <p>Probeer alle kaarten naar de vier foundations te verplaatsen, van aas tot koning.
+            Sorteer afwisselend rode en zwarte kaarten in aflopende volgorde in de tableau.</p>
+        <button id="start">Speel het spel</button>
+        <br>
+    </section>
+
+    <br>
+
+    <section>
+        <p><strong>Over dit project.</strong></p>
+        <p>Deze Klondike Solitaire is volledig gebouwd in JavaScript met HTML5 Canvas. Het spel bevat alle klassieke regels en functies, zoals drag & drop van kaarten, dubbelklik voor automatisch naar foundation verplaatsen en een werkend deck.</p>
+        <p>Het project is opgebouwd in een modulair patroon:</p>
+        <ul>
+            <li><strong>GameEngine:</strong> beheert kaarten, piles, tableau, foundations.</li>
+            <li><strong>Renderer:</strong> tekent kaarten en piles op het canvas met animaties en visuele feedback.</li>
+            <li><strong>MouseEvents:</strong> behandelt klikken, slepen en loslaten van kaarten. Dit deel omvat alle spelregels voor het leggen van de kaarten.</li>
+            <li><strong>UIController:</strong> startscherm, menu, knoppen, win-scherm en overlays.</li>
+        </ul>
+        <p>Het spel werkt het best in een desktop omgeving. Extra functies zijn het automatisch verplaatsen van de kaarten naar de foundation bij dubbelklik. Verkeerd geplaatste kaarten worden met easing functionaliteit teruggeplaatst op de oorspronkelijke positie.</p>
+    </section>
+
+    <br>
+
+    <section>
+        <p><strong>Spel afbeeldingen</strong></p>
+        <div>
+            <img src="screens/1.jpg">
+            <br>
+            <img src="screens/2.jpg">
+            <br>
+            <img src="screens/3.jpg">
+            <br>
+            <img src="screens/4.jpg">
+            <br>
+        </div>
+    </section>
+
+    <br>
+
+    <section>
+        <p><strong>Spelregels</strong></p>
+        <ul>
+            <li>Bouw stapels in de tableau aflopend en afwisselend van kleur.</li>
+            <li>Een aas start op een foundation, bouw daarna op tot koning in dezelfde soort.</li>
+            <li>Trek kaarten van de trekstapel en gebruik ze waar mogelijk.</li>
+            <li>Wanneer alle kaarten in de foundations liggen, win je het spel!</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Bart De Meyere</p>
+    </footer>
+    <script>
+
+        document.getElementById("start").addEventListener("click", () => {
+
+            window.location = "solitaire.html"
+        })
+
+    </script>
+</body>
+
+</html>
